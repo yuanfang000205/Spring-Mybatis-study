@@ -4,12 +4,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.yuanfang</groupId>
-  <artifactId>spring-day1</artifactId>
+  <groupId>com.baizhi</groupId>
+  <artifactId>spring_day2</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>spring-day1 Maven Webapp</name>
+  <name>spring_day2 Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -73,10 +73,12 @@
       <artifactId>spring-jdbc</artifactId>
       <version>4.3.2.RELEASE</version>
     </dependency>
+
+
   </dependencies>
 
   <build>
-    <finalName>spring-day1</finalName>
+    <finalName>spring_day2</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
