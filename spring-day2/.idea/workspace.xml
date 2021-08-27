@@ -28,6 +28,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -54,17 +63,43 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\SpringProjects\spring-day2\src\main\java" />
-      <recent name="F:\SpringProjects\spring-day2" />
       <recent name="F:\SpringProjects\spring-day2\src\main\resources" />
+      <recent name="F:\SpringProjects\spring-day2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestDynamicProxy">
+  <component name="RunManager" selected="Application.TestSpring (2)">
     <configuration name="TestDynamicProxy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="staticproxy.TestDynamicProxy" />
       <module name="spring-day2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="staticproxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSpring (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aop.TestSpring" />
+      <module name="spring-day2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSpring (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="afterthrows.TestSpring" />
+      <module name="spring-day2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="afterthrows.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,19 +120,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="TestSpring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yuanfang.test.TestSpring" />
+      <module name="spring-day2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuanfang.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestSpring (2)" />
+        <item itemvalue="Application.TestSpring (2)" />
+        <item itemvalue="Application.TestSpring (1)" />
         <item itemvalue="Application.TestDynamicProxy" />
         <item itemvalue="Application.TestSpring" />
       </list>
@@ -112,6 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1629967211052</updated>
       <workItem from="1629967212907" duration="2931000" />
+      <workItem from="1630035515627" duration="5291000" />
     </task>
     <servers />
   </component>
@@ -128,27 +182,44 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1059" height="205" key="GridCell.Tab.0.bottom" timestamp="1629971723894">
+    <state x="586" y="198" key="#Inspections" timestamp="1630049569552">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1059" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1629971723894" />
-    <state width="1059" height="205" key="GridCell.Tab.0.center" timestamp="1629971723893">
+    <state x="586" y="198" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1630049569552" />
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1630036897853">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1059" height="205" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1629971723893" />
-    <state width="1059" height="205" key="GridCell.Tab.0.left" timestamp="1629971723893">
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1630036897853" />
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1630050384468">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1059" height="205" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1629971723893" />
-    <state width="1059" height="205" key="GridCell.Tab.0.right" timestamp="1629971723894">
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1630050384468" />
+    <state width="1877" height="186" key="GridCell.Tab.0.bottom" timestamp="1630050394346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1059" height="205" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1629971723894" />
+    <state width="1877" height="186" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1630050394346" />
+    <state width="1877" height="186" key="GridCell.Tab.0.center" timestamp="1630050394346">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="186" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1630050394346" />
+    <state width="1877" height="186" key="GridCell.Tab.0.left" timestamp="1630050394346">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="186" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1630050394346" />
+    <state width="1877" height="186" key="GridCell.Tab.0.right" timestamp="1630050394346">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="186" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1630050394346" />
     <state x="527" y="216" key="SettingsEditor" timestamp="1629969885931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="527" y="216" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1629969885931" />
+    <state x="334" y="180" key="new project wizard" timestamp="1630050387937">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="180" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1630050387937" />
   </component>
 </project>

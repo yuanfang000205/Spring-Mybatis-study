@@ -86,6 +86,10 @@ Spring 框架用来`管理`**[创建|使用|销毁]**项目中的组件,由于sp
 
 > `c.创建组件`
 
+![image-20190704200717792](Spring_day1.assets/image-20190704200717792.png)
+
+![image-20190704201346305](Spring_day1.assets/image-20190704201346305.png)
+
 > `d.工厂管理`
 
 ```xml
@@ -99,6 +103,8 @@ Spring 框架用来`管理`**[创建|使用|销毁]**项目中的组件,由于sp
 
 </beans>
 ```
+
+![image-20190704201957168](Spring_day1.assets/image-20190704201957168.png)
 
 > `e.启动工厂`测试
 
@@ -151,6 +157,8 @@ Spring 框架用来`管理`**[创建|使用|销毁]**项目中的组件,由于sp
 <property name="price" value="23.23"/>
 ```
 
+![image-20190704205040539](Spring_day1.assets/image-20190704205040539.png)
+
 
 
 > `数组类型注入`
@@ -165,6 +173,8 @@ Spring 框架用来`管理`**[创建|使用|销毁]**项目中的组件,由于sp
       </array>
   </property>
 ```
+
+![image-20190704205423667](Spring_day1.assets/image-20190704205423667.png)
 
 
 
@@ -196,6 +206,8 @@ Spring 框架用来`管理`**[创建|使用|销毁]**项目中的组件,由于sp
   </props>
 </property>
 ```
+
+![image-20190704210245083](Spring_day1.assets/image-20190704210245083.png)
 
 
 

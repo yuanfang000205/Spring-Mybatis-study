@@ -7,7 +7,7 @@
 
 
     <!--管理Service-->
-    <bean id="userService" class="staticproxy.UserServiceImpl"></bean>
+    <bean id="userService" class="staticproxy.UserServiceImpl"/>
 
     <!--管理service 中proxy-->
     <bean id="userServiceStaticProxy" class="staticproxy.UserServiceStaticProxy">
