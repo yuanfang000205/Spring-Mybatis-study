@@ -12,6 +12,7 @@ import java.io.InputStream;
  * @Description TODO
  * @Author yuanFangT
  * @Date 2021/8/27
+ * SqlSessionFactoryBean =====> SqlSessionFactoryFactoryBean
  **/
 public class SqlSessionFactoryBean implements FactoryBean<SqlSessionFactory> {
     @Override

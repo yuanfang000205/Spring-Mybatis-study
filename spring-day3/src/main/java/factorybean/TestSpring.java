@@ -21,7 +21,7 @@ public class TestSpring {
         System.out.println(calendar.getTime());
         System.out.println(connection);
 
-        SqlSessionFactory ssf = (SqlSessionFactory) context.getBean("sqlSessionFactory");
+        SqlSessionFactory ssf = (SqlSessionFactory) context.getBean("sqlSessionFactoryBean");
         System.out.println(ssf.openSession());
     }
 }

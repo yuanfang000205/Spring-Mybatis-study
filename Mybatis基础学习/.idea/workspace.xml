@@ -76,17 +76,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.TestStuDAO.testQueryAllStu">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestDeptDAO.testQueryAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-day2" />
       <extension name="coverage">
@@ -188,6 +177,7 @@
       <workItem from="1630118962623" duration="21750000" />
       <workItem from="1630205180170" duration="5124000" />
       <workItem from="1630221593842" duration="2530000" />
+      <workItem from="1630225556652" duration="29000" />
     </task>
     <servers />
   </component>

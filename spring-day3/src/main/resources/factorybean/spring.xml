@@ -7,5 +7,5 @@
     <bean class="factorybean.CalendarFactoryBean" id="calendarFactoryBean"/>
     <bean class="factorybean.ConnectionFactoryBean" id="connectionFactoryBean"/>
 
-    <bean class="factorybean.SqlSessionFactoryBean" id="sqlSessionFactory"/>
+    <bean class="factorybean.SqlSessionFactoryBean" id="sqlSessionFactoryBean" />
 </beans>
