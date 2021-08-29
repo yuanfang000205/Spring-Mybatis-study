@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace: 命名空间 用来书写mapper对应接口的实现
+    全限定名：包.类
+-->
+<mapper namespace="com.yuanfang.dao.InfoDAO">
+    <!--save-->
+    <insert id="save" parameterType="com.yuanfang.entity.Info" keyProperty="id" useGeneratedKeys="true">
+        insert into t_info values (#{id},#{cardno},#{address})
+    </insert>
+</mapper>

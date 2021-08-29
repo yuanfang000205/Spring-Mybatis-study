@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="44d3fd7d-e782-4542-a2b6-3847ebad74f1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\mavenrep" />
+        <option name="mavenHome" value="F:\IDEA\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+        <option name="userSettingsFile" value="H:\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1xL0FJzwHYm0mdzRsm6WYBFpDoU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-day2/src/main/resources/com/yuanfang/mapper" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yuanfang.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\SpringProjects\Mybatis基础学习\mybatis-day2\src\main\resources\com\yuanfang\mapper" />
+      <recent name="F:\SpringProjects\Mybatis基础学习\mybatis-day2\src\main\resources" />
+      <recent name="F:\SpringProjects\Mybatis基础学习\mybatis-day1\src\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestStuDAO.testQueryAllStu">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDeptDAO.testQueryAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-day2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuanfang.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yuanfang.test" />
+      <option name="MAIN_CLASS_NAME" value="com.yuanfang.test.TestDeptDAO" />
+      <option name="METHOD_NAME" value="testQueryAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestEmpDAO.testQueryEmp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-day2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuanfang.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yuanfang.test" />
+      <option name="MAIN_CLASS_NAME" value="com.yuanfang.test.TestEmpDAO" />
+      <option name="METHOD_NAME" value="testQueryEmp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPersonDAO.testPersonDAO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-day2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuanfang.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yuanfang.test" />
+      <option name="MAIN_CLASS_NAME" value="com.yuanfang.test.TestPersonDAO" />
+      <option name="METHOD_NAME" value="testPersonDAO" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPersonDAO.testQueryAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-day2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuanfang.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yuanfang.test" />
+      <option name="MAIN_CLASS_NAME" value="com.yuanfang.test.TestPersonDAO" />
+      <option name="METHOD_NAME" value="testQueryAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStuDAO.testQueryAllStu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-day2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuanfang.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yuanfang.test" />
+      <option name="MAIN_CLASS_NAME" value="com.yuanfang.test.TestStuDAO" />
+      <option name="METHOD_NAME" value="testQueryAllStu" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestStuDAO.testQueryAllStu" />
+        <item itemvalue="JUnit.TestEmpDAO.testQueryEmp" />
+        <item itemvalue="JUnit.TestDeptDAO.testQueryAll" />
+        <item itemvalue="JUnit.TestPersonDAO.testQueryAll" />
+        <item itemvalue="JUnit.TestPersonDAO.testPersonDAO" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44d3fd7d-e782-4542-a2b6-3847ebad74f1" name="Default Changelist" comment="" />
+      <created>1630118959932</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630118959932</updated>
+      <workItem from="1630118962623" duration="21750000" />
+      <workItem from="1630205180170" duration="5124000" />
+      <workItem from="1630221593842" duration="2530000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="772" y="189" key="#Project_Structure" timestamp="1630118975639">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="772" y="189" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1630118975639" />
+    <state x="394" y="376" key="#SQL_Resolution_Scopes" timestamp="1630124072615">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="394" y="376" key="#SQL_Resolution_Scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1630124072615" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630124182297">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1630124182297" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1630224495585">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1630224495585" />
+    <state x="672" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1630135039955">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1630135039955" />
+    <state x="1083" y="357" key="FileChooserDialogImpl" timestamp="1630119890695">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1083" y="357" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1630119890695" />
+    <state width="1877" height="327" key="GridCell.Tab.0.bottom" timestamp="1630224588591">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="327" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1630224588591" />
+    <state width="1877" height="327" key="GridCell.Tab.0.center" timestamp="1630224588591">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="327" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1630224588591" />
+    <state width="1877" height="327" key="GridCell.Tab.0.left" timestamp="1630224588590">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="327" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1630224588590" />
+    <state width="1877" height="327" key="GridCell.Tab.0.right" timestamp="1630224588591">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="327" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1630224588591" />
+    <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1630146046499">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1630146046499" />
+    <state x="793" y="254" width="998" height="708" key="SettingsEditor" timestamp="1630221424019">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="793" y="254" width="998" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1630221424019" />
+    <state width="246" height="461" key="SqlResolveConfigurable" timestamp="1630124071176">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="246" height="461" key="SqlResolveConfigurable/0.0.1920.1040@0.0.1920.1040" timestamp="1630124071176" />
+    <state x="859" y="369" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1630123840508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="859" y="369" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1920.1040@0.0.1920.1040" timestamp="1630123840508" />
+    <state x="798" y="108" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1630123713560">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="798" y="108" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1630123713560" />
+    <state x="802" y="368" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1630123830957">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="802" y="368" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1630123830957" />
+    <state x="662" y="74" width="596" height="891" key="find.popup" timestamp="1630137696252">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="74" width="596" height="891" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1630137696252" />
+    <state x="256" y="154" key="new project wizard" timestamp="1630144700630">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="256" y="154" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1630144700630" />
+  </component>
+</project>

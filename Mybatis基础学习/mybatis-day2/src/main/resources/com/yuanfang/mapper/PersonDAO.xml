@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace: 命名空间 用来书写mapper对应接口的实现
+    全限定名：包.类
+-->
+<mapper namespace="com.yuanfang.dao.PersonDAO">
+    <!--save-->
+    <insert id="save" parameterType="com.yuanfang.entity.Person" keyProperty="id" useGeneratedKeys="true">
+        insert into t_person values (#{id},#{name},#{age},#{cardno})
+    </insert>
+
+    <resultMap id="personMap" type="com.yuanfang.entity.Person">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <result column="cardno" property="cardno"/>
+        <!-- association用来处理一对一关系标签 property：用来书写封装的对象属性名 javaType：关系属性的java类型-->
+        <association property="info" javaType="com.yuanfang.entity.Info">
+            <id column="iid" property="id"/>
+            <result column="icardno" property="cardno"/>
+            <result column="address" property="address"/>
+        </association>
+    </resultMap>
+    <select id="queryAll" resultMap="personMap">
+        select
+            p.id,p.name,p.age,p.cardno,
+            i.id iid,i.cardno icardno,i.address
+        from t_person p
+        left join t_info i
+        on p.cardno = i.cardno
+    </select>
+</mapper>

@@ -80,15 +80,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,6 +107,7 @@
       <updated>1630050395102</updated>
       <workItem from="1630050396272" duration="2807000" />
       <workItem from="1630058413898" duration="4013000" />
+      <workItem from="1630117544573" duration="690000" />
     </task>
     <servers />
   </component>
@@ -160,6 +159,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="499" y="256" width="921" height="641" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1630054231346" />
+    <state x="595" y="291" key="new project wizard" timestamp="1630118944123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="595" y="291" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1630118944123" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

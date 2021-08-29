@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace: 命名空间 用来书写mapper对应接口的实现
+    全限定名：包.类
+-->
+<mapper namespace="com.yuanfang.dao.EmpDAO">
+    <resultMap id="deptMap" type="com.yuanfang.entity.Emp">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <result column="bir" property="bir"/>
+        <association property="dept" javaType="com.yuanfang.entity.Dept" >
+            <id column="did" property="id"/>
+            <result column="dname" property="name"/>
+        </association>
+    </resultMap>
+    <select id="queryDeptById" resultMap="deptMap" parameterType="Integer">
+            select
+                e.id,e.name,
+                e.age,e.bir,
+                d.id did,d.name dname
+            from t_emp e
+            LEFT JOIN t_dept d
+            on e.deptid=d.id
+            where e.id=#{id}
+    </select>
+</mapper>

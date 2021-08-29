@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace: 命名空间 用来书写mapper对应接口的实现
+    全限定名：包.类
+-->
+<mapper namespace="com.yuanfang.dao.StuDAO">
+    <resultMap id="courseMap" type="com.yuanfang.entity.Student">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <collection property="courses" javaType="list" ofType="com.yuanfang.entity.Course">
+            <id column="cid" property="id"/>
+            <result column="cname" property="name"/>
+        </collection>
+    </resultMap>
+    <select id="queryAll" resultMap="courseMap">
+        select
+            s.id,s.name,
+            c.id cid,c.name cname
+        from t_student s
+        left join t_student_course sc
+               on s.id=sc.sid
+        left join t_course c
+               on c.id= sc.cid
+    </select>
+</mapper>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace: 命名空间 用来书写mapper对应接口的实现
+    全限定名：包.类
+-->
+<mapper namespace="com.yuanfang.dao.UserDAO">
+    <!--
+        insert:插入操作
+        id:方法名
+        parameterType:参数类型 包.类
+        注意：1.insert标签内写sql语句
+             2.#{对象属性名}
+             3.useGeneratedKeys=”true“ 使用数据库自动生成id策略，只对mysql有用
+             4.keyProperty   主键属性：当使用数据库自动生成策略时，将自动生成主键值赋值给参数对象中的哪个属性
+    -->
+    <insert id="save" parameterType="com.yuanfang.entity.User" keyProperty="id" useGeneratedKeys="true">
+        insert into t_uesr values (#{id},#{name},#{age},#{bir})
+    </insert>
+
+    <update id="update" parameterType="com.yuanfang.entity.User">
+        update t_uesr
+            <set>
+                <!--set标签动态去掉赋值语句前后多余的逗号-->
+                <!--test标签里的name为对象属性-->
+                <if test="name!=null and name!=''">
+                    name=#{name},
+                </if>
+                <if test="age!=null">
+                    age=#{age},
+                </if>
+                <if test="bir!=null">
+                    bir=#{bir}
+                </if>
+            </set>
+            where id=#{id}
+    </update>
+    <delete id="delete" parameterType="Integer">
+        delete from t_uesr where id=#{id}
+
+    </delete>
+    <!-- resultType: 类型为泛型的类型-->
+    <sql id="queryUser">
+        select id, name as uname, age, bir from t_uesr
+    </sql>
+    <resultMap id="userResultMap" type="com.yuanfang.entity.User">
+        <!--主键封装：id标签-->
+        <id column="id" property="id"></id>
+        <!--普通列 result-->
+        <result column="uname" property="name"/>
+        <result column="age" property="age"/>
+        <result column="bir" property="bir"/>
+    </resultMap>
+    <select id="queryAll" resultMap="userResultMap">
+        <include refid="queryUser"/>
+    </select>
+    <!--查询一个-->
+    <select id="queryById" parameterType="Integer" resultType="com.yuanfang.entity.User">
+        <include refid="queryUser"/>
+        where id=#{id}
+    </select>
+    <!--模糊查询-->
+    <select id="queryLikeByName" parameterType="String" resultType="com.yuanfang.entity.User">
+        <include refid="queryUser"/>
+        where name like concat("%",#{name},"%")
+    </select>
+    <!--分页查询:多个参数时不写parameterType-->
+    <select id="queryByPage" resultType="com.yuanfang.entity.User">
+        <include refid="queryUser"/>
+        limit #{start},#{rows}
+    </select>
+    <!--查询总条数-->
+    <select id="queryTotalCounts" resultType="Long">
+        select count(id) from t_uesr
+    </select>
+</mapper>
