@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--创建数据源-->
+    <bean id="datasource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3333/mybatis?serverTimezone=Asia/Shanghai"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+    </bean>
+    <!--获取sqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--注入数据源，mapper文件以及别名配置->typeAliasesPackage:配置这个Mapper文件里不用写全路径名了-->
+        <property name="dataSource" ref="datasource"/>
+        <property name="mapperLocations" value="classpath:com/yuanfang/mapper/*.xml"/>
+        <property name="typeAliasesPackage" value="com.yuanfang.entity"/>
+    </bean>
+    <!--通过配置创建DAO-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--注入sqlSessionFactory 以及dao接口所在的包-->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+        <property name="basePackage" value="com.yuanfang.dao"/>
+    </bean>
+    <!--创建事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="datasource"/>
+    </bean>
+    <!--创建事务环绕通知并进行事务细粒度控制-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <!--事务细粒度控制-->
+        <tx:attributes>
+            <tx:method name="save*"/>
+            <tx:method name="delete*"/>
+            <tx:method name="update*"/>
+        </tx:attributes>
+    </tx:advice>
+    <!--配置事务切面-->
+    <aop:config>
+        <aop:pointcut id="pc" expression="within(com.yuanfang.service.impl.*)"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pc"/>
+    </aop:config>
+    <!--管理Service层组件-->
+    <bean id="userService" class="com.yuanfang.service.impl.UserServiceImpl">
+        <property name="userDAO" ref="userDAO"/>
+    </bean>
+</beans>

@@ -8,13 +8,13 @@ import java.util.List;
  * @ClassName UserDAO
  * @Description TODO
  * @Author yuanFangT
- * @Date 2021/8/29
+ * @Date 2021/8/30
  **/
 public interface UserDAO {
     /**
-     * 查询所有用户信息
+     * 查询所有
      */
-    List<User> queryAll();
+    List<User> findAll();
     /**
      * 保存信息
      */

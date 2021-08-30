@@ -5,4 +5,7 @@
     <select id="queryAll" resultType="com.yuanfang.entity.User">
         select id,name,age,bir from t_uesr
     </select>
+    <insert id="save" parameterType="User">
+        insert into t_uesr values (#{id},#{name},#{age},#{bir})
+    </insert>
 </mapper>

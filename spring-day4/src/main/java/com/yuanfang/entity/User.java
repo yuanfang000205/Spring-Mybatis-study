@@ -6,7 +6,7 @@ import java.util.Date;
  * @ClassName User
  * @Description TODO
  * @Author yuanFangT
- * @Date 2021/8/29
+ * @Date 2021/8/30
  **/
 public class User {
     private String id;
@@ -17,7 +17,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
+                "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 ", bir=" + bir +
