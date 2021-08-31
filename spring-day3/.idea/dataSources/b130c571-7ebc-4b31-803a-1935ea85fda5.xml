@@ -1047,9 +1047,8 @@ BACKUP_ADMIN,BINLOG_ADMIN,CONNECTION_ADMIN,ENCRYPTION_KEY_ADMIN,GROUP_REPLICATIO
     </key>
     <column id="320" parent="291" name="id">
       <Position>1</Position>
-      <DataType>int(6)|0s</DataType>
+      <DataType>varbinary(255)|0s</DataType>
       <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="321" parent="291" name="name">
       <Position>2</Position>

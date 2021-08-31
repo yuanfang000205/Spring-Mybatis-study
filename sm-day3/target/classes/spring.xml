@@ -68,7 +68,7 @@
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <!--事务细粒度配置-->
         <tx:attributes>
-            <tx:method name="save"/>
+            <tx:method name="save*"/>
         </tx:attributes>
     </tx:advice>
 

@@ -33,9 +33,32 @@
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <!--事务细粒度控制-->
         <tx:attributes>
+            <!--
+            propagation:事务传播属性
+                    REQUIRED:需要事务       如果外层没有事务，则开启新事务，外层有事务，则融入当前事务
+                    SUPPORTS:支持事务       如果外层无事务不会开启新事务，若外层有事务则融入当前事务
+                REQUIRES_NEW:每次开启新事务  外层无事务开启新事物，有事务则挂起，等新事务执行完毕之后再执行外层事务
+               NOT_SUPPORTED:不支持事务      外层存在事务，挂起事务，自己以非事务方式执行，完毕后执行外层事务
+                       NEVER:不能有事务      存在事务报错
+                   MANDATORY:强制事务        无事务报错
+                      NESTED:嵌套事务        事务之间可以嵌套使用，数据库 oracle mysql 不支持
+           isolation:事务隔离级别
+                   DEFAULT:                 使用数据库默认的隔离级别(推荐)
+                   READ_UNCOMMITTED:        读且未提交  一个客户端读到了另一个客户端没有提交的数据 称之为脏读现象
+                   READ_COMMITTED:          读且提交    一个客户端只能读取另一个客户端提交的数据 避免脏读现象 Oracle默认
+                   REPEATABLE_READ:         可重复读    主要用来避免不可重复读现象出现:行锁  mysql默认级别
+                   SERIALIZABLE:            序列化读    主要用来避免幻影读现象出现:表锁
+                   注意:隔离级别越高,查询效率越低
+           read-only:事务读写性   true:只读 false:可读可写(mysql支持，oracle不支持)
+           rollback-for:出现什么类型异常回滚 默认属性RuntimeException以及其子类异常回滚
+           no-rollback-for:出现什么类型异常不回滚 java.lang.RuntimeException
+           timeout:事务超时性  ->-1:永不超时
+                             -> >=0的正整数 代表设置超时时间 单位 1秒
+            -->
             <tx:method name="save*"/>
             <tx:method name="delete*"/>
             <tx:method name="update*"/>
+            <tx:method name="find*" propagation="SUPPORTS"/>
         </tx:attributes>
     </tx:advice>
     <!--配置事务切面-->
