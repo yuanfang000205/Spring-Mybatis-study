@@ -5,8 +5,6 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
-
-
   <!--配置工厂配置文件的位置-->
   <context-param>
     <param-name>contextConfigLocation</param-name>

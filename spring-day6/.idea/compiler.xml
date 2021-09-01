@@ -6,13 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ssm-struts" />
-        <module name="spring-day3" />
-        <module name="spring-day4" />
-        <module name="spring-day5" />
         <module name="spring-day6" />
-        <module name="sm-day3" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-day6" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
